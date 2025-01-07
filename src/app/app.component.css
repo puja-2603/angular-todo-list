@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #a2d2ff, #89f7fe); /* Softer, modern gradient */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #333333; /* Neutral dark text for readability */
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background: linear-gradient(90deg, #4facfe, #00f2fe); /* Sleek blue gradient */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s ease;
+  }
+  
+  .navbar:hover {
+    background: linear-gradient(90deg, #6a11cb, #2575fc); /* Subtle hover gradient */
+  }
+  
+  .navbar .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .navbar-brand:hover {
+    color: #ffe082; /* Warm hover effect for brand */
+    text-decoration: none;
+  }
+  
+  .navbar .nav-link {
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 0 10px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #ffe082; /* Accent color for hover */
+    transform: translateY(-3px); /* Modern hover effect */
+  }
+  
+  .navbar .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #ffe082;
+    transition: width 0.3s ease;
+    margin-top: 5px;
+  }
+  
+  .navbar .nav-link:hover::after {
+    width: 100%; /* Underline grows on hover */
+  }
+  
+  .navbar-toggler {
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .navbar-toggler:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" fill="%23ffffff" viewBox="0 0 30 30"%3e%3cpath stroke="rgba(255, 255, 255, 1)" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3e%3c/svg%3e');
+  }
+  
+  /* Container Styles */
+  .container {
+    margin-top: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff, #f3f4f6); /* Modern light gradient */
+    color: #333333;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    animation: fadeIn 1s ease-in-out;
+    width: auto; /* Let the container stretch naturally */
+    max-width: none; /* Ensure no restriction on width */
+  }
+  
+  /* Smooth Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar .navbar-brand {
+      font-size: 1.5rem;
+    }
+    .navbar .nav-link {
+      font-size: 0.9rem;
+    }
+    .container {
+      padding: 20px;
+    }
+  }
+  

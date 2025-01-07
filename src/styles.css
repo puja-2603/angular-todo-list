@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1f2c33, #3a4e5e); /* Subtle gradient background */
+    color: #f4f4f4; /* Light color for text */
+    padding: 40px 20px;
+    min-height: 100vh;
+  }
+  
+  .my-3 {
+    background: #2c3e50; /* Dark background for the form container */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .my-3 h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-control {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    background: #34495e;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #2c3e50;
+    box-sizing: border-box;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-primary {
+    font-family: 'Poppins', sans-serif; 
+  }
+  
